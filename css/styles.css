@@ -175,6 +175,13 @@ body {
     
 } */
 
+.logo {
+    position: fixed;
+    width: 58px;
+    height: 58px;
+    left: -10px;
+    top: -14px;
+}
 
 header img {
     width: 80px;
@@ -186,33 +193,37 @@ header img {
 }
 
 #my_header {
+    width: 30vw;
+    height: 70px;
+    margin-left: 2vw;
     display: flex;
     justify-content: center;
     flex-direction: column;
-    background-color: #093c5c;
+    background-color: #390805;
     color: #e8efcc;
-    font-weight: bold;
     font-style: italic;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-
-header h3 {
-    text-align: end;
-    padding-top: 0.7rem;
-    padding-bottom: 0.7rem;
-}
-
-header h1 {
-    text-align: center;
-    padding-top: 0.7rem;
-    padding-bottom: 0.7rem;
+    box-shadow: 2px 1px 15px #e8efcc;
+    border-radius: 5px;
+    font-size: 0.5em;
 }
 
 #titre_dev {
-    font-size: 0.6em;
+    text-align: end;
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+    font-weight: normal;
+    font-size: 1.1em;
     margin-right: 1vw;
-
 }
+
+#my_header h1 {
+    text-align: center;
+    padding-top: 0.4rem;
+    padding-bottom: 0.3rem;
+    font-size: 2em;
+}
+
 
 #div_nav {
     display: flex;
@@ -220,8 +231,8 @@ header h1 {
 }
 
 .nav {
-    margin-top: 1vh;
-    width: 80vw;
+    margin-top: 0.8vh;
+    width: 65vw;
     background-color: var(--color-noir);
     text-align: center;
     display: flex;
@@ -247,6 +258,7 @@ header h1 {
     color: #2C3138;
 }
 
+
 /* .nav_cv{
     margin-top: 5vh;
     width: 90vw;
@@ -264,13 +276,22 @@ main {
 }
 
 #main_colonne_aacueil {
-    height: 62vh;
-    flex-direction: column;
-    margin-top: 10px;
+    padding: 20px;
+    height: 420px;
+    margin-top: 40px;
     margin-bottom: 10px;
     background-image: url(../assets/img/arriere_plan2.jpg);
     background-size: cover;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 
+}
+
+#main_colonne_aacueil img {
+    width: 200px;
+    /* height: 200px; */
+    border-radius: 5px;
 }
 
 #main_colonne_cv {
@@ -285,7 +306,7 @@ h2 {
 }
 
 #acroche {
-    width: 55vw;
+    width: 40vw;
     height: 40vh;
     display: flex;
     flex-direction: column;
@@ -303,9 +324,9 @@ h2 {
 
 #lien_cv {
     margin-top: 1vh;
-    font-size: 0.6em;
+    font-size: 0.5em;
     text-decoration: underline;
-    color: var(--color-texte-dark);
+    color: var(--color-texte-light);
 }
 
 
@@ -389,6 +410,57 @@ section p :nth-child(4) {
 
 }
 
+#cv_texte {
+    margin-left: 250px;
+}
+
+#cv_aside_left {
+    position: fixed;
+    width: 270px;
+    height: 470px;
+    background-color: #390805;
+    margin-right: 870px;
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 3px;
+    box-shadow: 1px 1px 3px yellow;
+}
+
+#cv_aside_left img {
+    width: 150px;
+    border-radius: 5px;
+}
+
+#cv_aside_left p {
+    font-size: 0.65em;
+    color: var(--color-background);
+    margin-bottom: 5px;
+
+}
+
+#telecharger_cv {
+    width: 180px;
+    height: 30px;
+    background-color: rgb(25, 170, 5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3px;
+    color: var(--color-texte-light);
+}
+#cv_aside_left a{
+text-decoration: none;
+}
+
+html {
+
+    scroll-behavior: smooth !important;
+}
+
+ 
 .skills-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -424,8 +496,8 @@ section p :nth-child(4) {
     justify-content: center;
     align-items: center;
     text-align: center;
-    grid-gap: 1rem;
-    padding: 1rem 80px;
+    grid-gap: 2px;
+    padding: 0px;
     font-size: 1.6rem;
 }
 
@@ -486,19 +558,20 @@ h4 {
     font-family: 'calibri', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-.atouts_box span{
+.atouts_box span {
     font-weight: bold;
     font-family: 'calibri', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 0.8em;
     margin-bottom: 2vw;
 }
 
-.atouts_box h4{
+.atouts_box h4 {
     font-family: 'calibri', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 0.9em;
     margin-bottom: 0vw;
 }
-.atouts_box p{
+
+.atouts_box p {
     font-family: 'calibri', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 0.8em;
     margin-bottom: 0.5vw;
@@ -510,7 +583,7 @@ h4 {
     justify-content: center;
     text-align: center;
     font-size: 0.8em;
-    font-family:  'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: normal;
     font-style: italic;
 

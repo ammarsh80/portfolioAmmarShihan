@@ -7,5 +7,5 @@
     <link href="https://fonts.cdnfonts.com/css/courgette" rel="stylesheet" />
     <link href="https://fonts.cdnfonts.com/css/inter" rel="stylesheet" />
     <link href="https://fonts.cdnfonts.com/css/montserrat" rel="stylesheet" />
-    <title>Bonjour et Bienvenue </title>
+    <title>Bonjour et Bienvenue</title>
 </head>
