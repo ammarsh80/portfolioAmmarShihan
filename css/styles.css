@@ -3,6 +3,10 @@
 @import url("https://fonts.cdnfonts.com/css/inter");
 
 /* reset CSS */
+/* html, body, main {
+
+    scroll-behavior: smooth !important;
+} */
 html,
 body,
 div,
@@ -174,13 +178,50 @@ body {
     background-attachment: fixed;
     
 } */
+#topBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 15px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    /* background-color: #f1f1f1; */
+    /* color: green; */
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+#topBtn:hover {
+    /* background-color: rgb(136, 100, 100); */
+    /* background-color: #19aa05; */
+    /* Add a hover effect */
+    transform: scale(1.2,1.2);
+    /* color: rgb(34, 22, 22); */
+    /* Text color on hover */
+}
+
+.myBtn:hover {
+    background-color: #555;
+}
+
+#main_colonne_aacueil img:hover,
+#my_header:hover {
+    transform: scale(1.1, 1.1);
+}
 
 .logo {
     position: fixed;
     width: 58px;
     height: 58px;
-    left: -10px;
+    left: 90px;
     top: -14px;
+}
+
+.logo:hover {
+    transform: scale(1.1, 1.1);
 }
 
 header img {
@@ -227,12 +268,14 @@ header img {
 
 #div_nav {
     display: flex;
-    justify-content: center;
+    justify-content: end;
 }
 
 .nav {
     margin-top: 0.8vh;
-    width: 65vw;
+    margin-right: 0.8vw;
+
+    width: 70vw;
     background-color: var(--color-noir);
     text-align: center;
     display: flex;
@@ -252,21 +295,19 @@ header img {
     letter-spacing: 1px;
 }
 
-.nav a:hover {
+.nav a:hover,
+h2:hover,
+#cv_aside_left :nth-child(2):hover,
+#cv_aside_left :nth-child(3):hover,
+#cv_aside_left :nth-child(4):hover,
+#cv_aside_left :nth-child(5):hover,
+#cv_aside_left :nth-child(6):hover {
     /* background-color: var(--color-texte-light); */
-    background-color: #f2d4cd;
+    /* background-color: #f2d4cd; */
+    background-color: #19aa05;
     color: #2C3138;
 }
 
-
-/* .nav_cv{
-    margin-top: 5vh;
-    width: 90vw;
-    background-color:#6A3AA0;
-    font-weight: normal;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    border-radius: 7px;
-} */
 main {
 
     display: flex;
@@ -277,7 +318,8 @@ main {
 
 #main_colonne_aacueil {
     padding: 20px;
-    height: 420px;
+    /* height: 420px; */
+    height: 72vh;
     margin-top: 40px;
     margin-bottom: 10px;
     background-image: url(../assets/img/arriere_plan2.jpg);
@@ -301,9 +343,7 @@ main {
 
 }
 
-h2 {
-    max-width: 90vw;
-}
+
 
 #acroche {
     width: 40vw;
@@ -322,12 +362,7 @@ h2 {
     font-size: 0.7em;
 }
 
-#lien_cv {
-    margin-top: 1vh;
-    font-size: 0.5em;
-    text-decoration: underline;
-    color: var(--color-texte-light);
-}
+
 
 
 
@@ -338,6 +373,7 @@ footer {
     margin: 1rem auto 1rem;
     background-color: #efefef;
     box-shadow: 0 0 1.0rem rgb(96, 170, 219);
+
 
 }
 
@@ -350,51 +386,26 @@ section {
     align-items: center;
 }
 
-
-
-
 section h2 {
     margin-top: 0.5vw;
 
-    width: 30vw;
+    width: 40vw;
     line-height: 3.5rem;
     color: var(--color-texte-light);
-    background-color: var(--color-secondary);
+    background-color: #390805;
     font-size: 0.9em;
-
+    border-radius: 5px;
     text-align: center;
     padding-left: 1.0rem;
     margin-bottom: 2rem;
     top: 0;
     position: sticky;
-}
-
-main ul {
-    display: grid;
-    margin-bottom: 1.0rem;
-    margin-top: 5.0rem;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 4;
-    text-align: center;
-}
-
-main h2 {
-    box-shadow: 0 0 1.0rem rgb(96, 170, 219);
     font-family: "Courgette", sans-serif;
-    ;
+    box-shadow: 1px 1px 3px yellow;
+
+
 
 }
-
-main ul li {
-    display: block;
-    width: 100%;
-}
-
-
-
-
-
-
 
 footer h2 {
     text-align: center;
@@ -405,13 +416,14 @@ section {
     margin-bottom: 50px;
 }
 
-section p :nth-child(4) {
+/* section p :nth-child(4) {
     text-align: center;
 
-}
+} */
 
 #cv_texte {
     margin-left: 250px;
+    width: 75vw;
 }
 
 #cv_aside_left {
@@ -434,10 +446,13 @@ section p :nth-child(4) {
     border-radius: 5px;
 }
 
-#cv_aside_left p {
+#cv_aside_left a {
+    width: 250px;
+    height: 25px;
     font-size: 0.65em;
     color: var(--color-background);
     margin-bottom: 5px;
+    text-align: center;
 
 }
 
@@ -450,94 +465,84 @@ section p :nth-child(4) {
     justify-content: center;
     border-radius: 3px;
     color: var(--color-texte-light);
-}
-#cv_aside_left a{
-text-decoration: none;
-}
+    font-size: 0.7em;
+    margin-left: 35px;
 
-html {
-
-    scroll-behavior: smooth !important;
 }
 
- 
+#lien_cv {
+    text-decoration: none;
+}
+
+
+
 .skills-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
     justify-content: center;
     align-items: center;
+    text-align: center;
     grid-gap: 1rem;
-    padding: 1rem 80px;
     font-size: 1.6rem;
+    gap: 20px;
 }
 
-.skill-box {
-    padding: 1rem;
-}
+
 
 .exp-container {
     display: grid;
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(4, 1fr);
     justify-content: center;
     align-items: center;
     text-align: center;
     grid-gap: 1rem;
-    padding: 1rem 80px;
     font-size: 1.6rem;
+    gap: 20px;
+
 }
 
-.exp-box {
-    padding: 1rem;
-}
 
 .study-container {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
     justify-content: center;
     align-items: center;
     text-align: center;
-    grid-gap: 2px;
+    grid-gap: 0px;
     padding: 0px;
     font-size: 1.6rem;
+    gap: 20px;
 }
 
-.study-box {
-    padding: 1rem;
 
-}
-
-.cv_date {
-    color: var(--color-texte-dark);
-}
 
 .cv_date p {
-    margin-bottom: 2vw;
+    margin-bottom: 0.5vw;
     font-family: 'calibri', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 1em;
+    color: var(--color-texte-dark);
+
 
 }
 
 
 .cv_date h3,
-h4 {
-    margin-bottom: 1vw;
-    color: var(--color-violet);
+.cv_competence h4 {
+    margin-bottom: 0.5vw;
+    color: #19aa05;
     font-family: 'calibri', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-
+.cv_competence_grid {
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    gap: 20px;
+}
 
 .cv_competence span {
     margin-bottom: 0.5vw;
     font-family: 'calibri', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-weight: bold;
-}
-
-.cv_competence p {
-    margin-bottom: 3vw;
-    font-family: 'calibri', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 0.8em;
-
 }
 
 .cv_competence_img {
@@ -552,17 +557,13 @@ h4 {
 
 }
 
-.cv_competence h4 {
-    margin-bottom: 1vw;
-    color: var(--color-violet);
-    font-family: 'calibri', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
+
 
 .atouts_box span {
     font-weight: bold;
     font-family: 'calibri', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 0.8em;
-    margin-bottom: 2vw;
+    margin-bottom: 0.5vw;
 }
 
 .atouts_box h4 {
@@ -596,18 +597,12 @@ h4 {
 
 
 
-section ul {
-    grid-template-columns: repeat(2, 1fr);
-    text-align: center;
-}
 
 .skills-container {
     grid-template-columns: repeat(1, 1fr);
 }
 
-.study-container {
-    grid-template-columns: repeat(1, 1fr);
-}
+
 
 header {
     display: block;
@@ -619,14 +614,6 @@ div {
     display: grid;
     column-gap: 20px;
 }
-
-
-
-
-
-
-
-
 
 /* Page d'erreur */
 
@@ -658,9 +645,4 @@ div {
 
 .container p {
     font-size: 0.5em;
-}
-
-.cv_image {
-    width: 90vw;
-    margin: 5vw;
 }

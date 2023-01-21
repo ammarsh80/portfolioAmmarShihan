@@ -17,7 +17,12 @@ include "common/head.php";
         if (!isset($page) || (($page !== 'accueil') && ($page !== 'realisations') && ($page !== 'veilles_technologiques') && ($page !== 'cv_Ammar_Shihan') && ($page !== 'CV_Ammar_SHIHAN.pdf'))) {
             include 'content/error.php';
             die;
-        } else {
+        } elseif ($page == 'cv_Ammar_Shihan'){
+            include 'common/header.php';
+            include 'common/navigation.php';
+            include 'content/' . $page . '_content.php';
+        }
+         else {
             include 'common/header.php';
             include 'common/navigation.php';
             include 'content/' . $page . '_content.php';
@@ -25,5 +30,6 @@ include "common/head.php";
         }
         ?>
 </body>
+<script src="css/main.js"></script>
 
 </html>
