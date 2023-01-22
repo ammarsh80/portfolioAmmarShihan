@@ -21,25 +21,25 @@ function topFunction() {
   });
 }
 
-const asideLinks = [...document.querySelectorAll("aside a")]
-const sections = [...document.querySelectorAll("section")]
+// const asideLinks = [...document.querySelectorAll("aside a")]
+// const sections = [...document.querySelectorAll("section")]
 
-let sectionsPosition;
+// let sectionsPosition;
 
-function positionClaculation() {
-    sectionsPosition = sections.map(section => section.offsetTop)
-}
-positionClaculation()
-console.log(sectionsPosition);
+// function positionClaculation() {
+//     sectionsPosition = sections.map(section => section.offsetTop)
+// }
+// positionClaculation()
+// console.log(sectionsPosition);
 
-asideLinks.forEach(link => link.addEventListener("click", addScrollSmooth))
+// asideLinks.forEach(link => link.addEventListener("click", addScrollSmooth))
 
-function addScrollSmooth(e) {
-    const linkIndex = asideLinks.indexOf(e.target);
-    window.scrollTo({
-        top: sectionsPosition[linkIndex],
-        behavior: "smooth"
-    })
-}
+// function addScrollSmooth(e) {
+//     const linkIndex = asideLinks.indexOf(e.target);
+//     window.scrollTo({
+//         top: sectionsPosition[linkIndex],
+//         behavior: "smooth"
+//     })
+// }
 
-window.addEventListener("resize",positionClaculation)
+// window.addEventListener("resize",positionClaculation)

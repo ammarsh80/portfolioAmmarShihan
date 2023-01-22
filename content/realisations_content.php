@@ -1,24 +1,97 @@
-<main>
-
-    <section>
-        <h2 id="projets">Projets Web</h2>
-        <div class="projets-container">
-            <div class="projets-box">
-                <p>
-                    <a href="https://shihan.needemand.com/projets_web/projet_couture/index.html">Site web
-                        (Association Bien Cousue)</a><br> <br>
-                    <a href="https://shihan.needemand.com/projets_web/badminton/index.php?page=home">Site web
-                        (GRETA BADMINTON CLUB)</a><br> <br>
-                    <a href="https://shihan.needemand.com/projets_web/player_audio/index.html">Mon Audio
-                        Player</a><br> <br>
-                    <a href="https://shihan.needemand.com/projets_web/ExoJSCalculatrice/index.html">Ma
-                        Calculatrice</a><br> <br>
-                    <a href="https://shihan.needemand.com/projets_web/EXOJSMarquezDesPoints/index.html">Quiz :
-                        Etes-vous écolo ?</a><br> <br>
-                    <a href="https://shihan.needemand.com/projets_web/EXOJSChronometre/index.html">Mon
-                        Chronomètre</a><br> <br>
-                </p>
+<main id="main_rea_colonne">
+    <div class="container_projets_web">Projets Web
+        <section class="cards-wrapper">
+            <div class="card-grid-space">
+                <a href="https://shihan.needemand.com/projets_web/projet_couture/evenements/evenement.html">
+                    <div class="card" style="background-image: url(./assets/img/couture.jpg)">
+                        <div class="text_card">
+                            <h1>Site Web Statique</h1>
+                            <!-- <div class="date">6 Oct 2017</div> -->
+                            <div class="tags">
+                                <div class="tag">HTML CSS</div>
+                            </div>
+                            <p>Réalisé en octobre 2022</p>
+                        </div>
+                    </div>
+                </a>
             </div>
-        </div>
-    </section>
+            <div class="card-grid-space">
+                <a href="https://shihan.needemand.com/projets_web/player_audio/index.html">
+                    <div class="card" style="background-image: url(./assets/img/player_audio.PNG)">
+                        <div class="text_card">
+                            <h1>Mon Audio Player</h1>
+                            <!-- <div class="date">6 Oct 2017</div> -->
+                            <div class="tags">
+                                <div class="tag">HTML CSS JS</div>
+                            </div>
+                            <p>Réalisé en décembre 2022</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="card-grid-space">
+                <a href="https://shihan.needemand.com/projets_web/badminton/index.php?page=home">
+                    <div class="card" style="background-image: url(./assets/img/badminton.jpg)">
+                        <div class="text_card">
+                            <h1>Greta Badminton Club</h1>
+                            <!-- <div class="date">6 Oct 2017</div> -->
+                            <div class="tags">
+                                <div class="tag">HTML CSS JS PHP</div>
+                            </div>
+                            <p>Réalisé en janvier 2023</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </section>
+    </div>
+    <div class="container_projets_web container_projets_code">Projets Code
+        <section class="cards-wrapper">
+
+
+            <div class="card-grid-space">
+                <a href="https://shihan.needemand.com/projets_web/ExoJSCalculatrice/index.html">
+                    <div class="card" style="background-image: url(./assets/img/calculatrice.png)">
+                        <div class="text_card">
+                            <h1>Ma Calculatrice</h1>
+                            <!-- <div class="date">6 Oct 2017</div> -->
+                            <div class="tags">
+                                <div class="tag">HTML CSS JS</div>
+                            </div>
+                            <p>Réalisé en novembre 2022</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="card-grid-space">
+                <a href="https://shihan.needemand.com/projets_web/EXOJSMarquezDesPoints/index.html">
+                    <div class="card" style="background-image: url(./assets/img/quiz.jpg)">
+                        <div class="text_card">
+                            <h1>Quiz: Etes-vous écolo ?</h1>
+                            <!-- <div class="date">6 Oct 2017</div> -->
+                            <div class="tags">
+                                <div class="tag">HTML CSS JS</div>
+                            </div>
+                            <p>Réalisé en décembre 2022</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="card-grid-space">
+                <a href="https://shihan.needemand.com/projets_web/EXOJSChronometre/index.html">
+                    <div class="card" style="background-image: url(./assets/img/chronometre.jpg)">
+                        <div class="text_card">
+                            <h1>Mon Chronomètre</h1>
+                            <!-- <div class="date">6 Oct 2017</div> -->
+                            <div class="tags">
+                                <div class="tag">HTML CSS JS</div>
+                            </div>
+                            <p>Réalisé en novembre 2022</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </section>
+    </div>
 </main>

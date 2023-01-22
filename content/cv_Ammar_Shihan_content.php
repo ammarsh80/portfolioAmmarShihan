@@ -17,7 +17,7 @@
 
     </aside>
     <div id="cv_texte">
-
+<div id="formation"></div>
         <section>
 
             <h2 id="etudes">Formation</h2>
@@ -56,6 +56,7 @@
                 </div>
             </div>
         </section>
+        <div id="exp_prof"></div>
         <section>
             <h2 id="experiences">Expérience professionnelle</h2>
             <div class="exp-container exp-box cv_date">
@@ -90,6 +91,7 @@
                 </div>
             </div>
         </section>
+        <div id="comp"></div>
         <section>
             <h2 id="skills">Compétences</h2>
             <!-- <img src="./assets/img/cv_competence.png" alt="" class="cv_competence_img"> -->
@@ -150,7 +152,7 @@
                 </div>
             </div>
         </section>
-
+<div id="atous"></div>
         <section>
             <h2 id="atouts">Atouts</h2>
             <div class="atouts-container">
@@ -168,8 +170,8 @@
                 </div>
             </div>
         </section>
-
-        <section>
+<div id="loisir_centre"></div>
+        <section id="loisir_centre">
             <h2 id="loisirs">Loisirs & Centres d’intérêt</h2>
             <div class="loisirs-container">
                 <div class="loisirs-box">
