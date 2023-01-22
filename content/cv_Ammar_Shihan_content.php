@@ -17,7 +17,7 @@
 
     </aside>
     <div id="cv_texte">
-<div id="formation"></div>
+        <div id="formation"></div>
         <section>
 
             <h2 id="etudes">Formation</h2>
@@ -152,7 +152,7 @@
                 </div>
             </div>
         </section>
-<div id="atous"></div>
+        <div id="atous"></div>
         <section>
             <h2 id="atouts">Atouts</h2>
             <div class="atouts-container">
@@ -170,7 +170,7 @@
                 </div>
             </div>
         </section>
-<div id="loisir_centre"></div>
+        <div id="loisir_centre"></div>
         <section id="loisir_centre">
             <h2 id="loisirs">Loisirs & Centres d’intérêt</h2>
             <div class="loisirs-container">

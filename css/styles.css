@@ -177,6 +177,13 @@ body {
     font-size: 2em;
 }
 
+main {
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    align-self: center;
+}
 
 #topBtn {
     display: none;
@@ -219,14 +226,21 @@ body {
     /* top: -14px; */
 }
 
+.a_logo {
+    margin-top: -20px;
+    height: 60px;
+}
+
 .logo:hover {
     transform: scale(1.1, 1.1);
 }
-header {
+
+/* header {
     display: block;
     position: static;
     margin: 0 auto;
-}
+} */
+
 header img {
     width: 80px;
     height: 80px;
@@ -267,16 +281,18 @@ header img {
     padding-bottom: 0.3rem;
     font-size: 2em;
 }
+
 #div_nav {
     display: flex;
     justify-content: end;
-    margin-bottom: 80px;
+    margin-bottom: 120px;
     z-index: 99;
 
 }
 
 .nav {
-      width: 100vw;
+    width: 100vw;
+    height: 60px;
     background-color: var(--color-noir);
     text-align: center;
     display: flex;
@@ -287,18 +303,20 @@ header img {
     position: fixed;
     z-index: 99;
 
-
 }
 
 .nav a {
     color: #f4fb90;
     padding: 20px 30px;
-    font-size: 0.6em;
+    font-size: 0.57em;
     transition: all 0.3s ease-out;
     letter-spacing: 1px;
 }
 
-.nav a:hover,
+.nav :nth-child(2):hover,
+.nav :nth-child(3):hover,
+.nav :nth-child(4):hover,
+.nav :nth-child(5):hover,
 h2:hover,
 #cv_aside_left :nth-child(2):hover,
 #cv_aside_left :nth-child(3):hover,
@@ -311,13 +329,8 @@ h2:hover,
     color: #2C3138;
 }
 
-main {
 
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    align-self: center;
-}
+
 /* Fin_Navbar *******************************************/
 
 /* Début_Footer *******************************************/
@@ -338,7 +351,8 @@ footer h2 {
 
 .container p {
     font-size: 0.5em;
-} 
+}
+
 /* Fin_Footer *******************************************/
 
 /* Fin_Common **********************************************************************************/
@@ -382,7 +396,221 @@ footer h2 {
     font-size: 0.7em;
 }
 
-/* Début_Page_Acceuil **********************************************************************************/
+/* Fin_Page_Acceuil **********************************************************************************/
+
+
+/* Début_Page d'erreur */
+
+/* #body_error {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+#message_error {
+    width: 650px;
+    height: 400px;
+    background-image: url(../assets/img/error_404.jpg);
+    background-size: cover;
+    margin: 20px;
+    padding: 60px;
+    padding-top: 90px;
+    color: rgb(170, 65, 65);
+    font-size: 1.2em;
+    text-align: center;
+    font-weight: bold;
+}
+
+.go_back {
+    margin-top: 130px;
+}
+*/
+
+
+/* Fin_Page d'erreur */
+
+/* Début_Page_Réalisations **********************************************************************************/
+
+#main_rea_colonne {
+    display: flex;
+    flex-direction: column
+}
+
+.info {
+    margin: 0;
+    /* min-height: 100vh; */
+    font-family: 'Open Sans';
+    background: #fafafa;
+}
+
+a {
+    color: inherit;
+}
+
+.container_projets_web {
+    position: static;
+    width: auto;
+    height: 500px;
+    background-color: rgb(234, 206, 206);
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.container_projets_code {
+
+    background-color: #84bb7d;
+}
+
+.cards-wrapper {
+    position: static;
+
+    /* width: auto; */
+    /* height: auto; */
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 250px 250px 250px;
+    grid-template-rows: 300px 300px 300px;
+    grid-gap: 4rem;
+    padding: 4rem;
+    margin: 0 auto;
+    width: max-content;
+}
+
+.card {
+    width: 250px;
+    height: 300px;
+    font-family: 'Heebo';
+    opacity: 0.85;
+    background-repeat: no-repeat;
+    background-size: 100% 150%;
+    font-size: 0.5em;
+    color: white;
+    border-radius: 10px;
+    display: flex;
+    justify-content: end;
+    background-size: 250px 300px;
+    /* background-position: center; */
+    box-shadow: 0 0 2em -1em black;
+    transition: all, 1;
+    /* position: relative; */
+    /* overflow: hidden; */
+    border: 1px solid #19b604;
+    text-decoration: none;
+}
+
+.text_card {
+    width: 250px;
+    height: 110px;
+    background-color: #390805;
+    padding: 10px;
+    border-top: 1px solid black;
+    color: var(--color-texte-light);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.card:hover {
+    transform: rotate(0deg);
+    transform: scale(1.05, 1.05);
+}
+
+.card h1 {
+    margin-bottom: 10px;
+    font-size: 1.4em;
+    line-height: 1.2em;
+}
+
+.card p {
+    font-size: 0.85em;
+    font-family: 'Open Sans';
+    margin-top: 0.5em;
+    line-height: 2em;
+}
+
+.card .tags {
+    display: flex;
+}
+
+.card .tags .tag {
+    font-size: 0.95em;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 0.3rem;
+    padding: 0 0.5em;
+    margin-right: 0.5em;
+    line-height: 1.5em;
+    transition: all,
+        var(--transition-time);
+    color: #1d033b;
+}
+
+.card:hover .tags .tag {
+    background: var(--color-texte-dark);
+    color: rgb(192, 243, 117);
+}
+
+/* .card .date {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 0.75em;
+  padding: 1em;
+  line-height: 1em;
+  opacity: .8;
+} */
+
+/* .card:before,
+.card:after {
+    content: '';
+    transform: scale(0);
+    transform-origin: top left;
+    border-radius: 50%;
+    position: absolute;
+    left: -50%;
+    top: -50%;
+    z-index: -5;
+    transition: all, var(--transition-time);
+    transition-timing-function: ease-in-out;
+} */
+
+/* .card:before {
+    opacity: 0.5;
+    width: 250%;
+    height: 250%;
+}
+
+.card:after {
+    opacity: 0.9;
+    width: 200%;
+    height: 200%;
+} */
+
+.card:hover {
+    opacity: 0.9;
+
+    color: var(--color-texte-dark);
+}
+
+.info {
+    font-size: 1.2em;
+    display: flex;
+    padding: 1em 3em;
+    height: 3em;
+}
+
+.info h1 {
+    font-size: 1em;
+    font-weight: normal;
+}
+
+
+/* Fin_Page_Réalisations **********************************************************************************/
+
 
 
 /* Début_Page_CV **********************************************************************************/
@@ -415,7 +643,7 @@ section h2 {
 }
 
 #main_colonne_cv {
-    margin-top: -3vw;
+    margin-top: -100px;
     flex-direction: column;
     max-width: 90vw;
 }
@@ -433,7 +661,7 @@ section {
 #cv_aside_left {
     position: fixed;
     width: 25vw;
-    height: 81vh;
+    height: 83vh;
     background-color: #390805;
     margin-right: 63vw;
     margin-top: 60px;
@@ -443,11 +671,11 @@ section {
     align-items: center;
     border-radius: 3px;
     box-shadow: 1px 1px 3px yellow;
-    font-size: 2.3vw;
+    font-size: 2.1vw;
 }
 
 #cv_aside_left img {
-    width: 15vw;
+    width: 11vw;
     border-radius: 5px;
 }
 
@@ -478,6 +706,7 @@ section {
 #lien_cv {
     text-decoration: none;
 }
+
 .skills-container {
     display: grid;
     grid-template-rows: repeat(3, 1fr);
@@ -583,6 +812,7 @@ section {
 .loisirs-box {
     padding: 1rem;
 }
+
 .skills-container {
     grid-template-columns: repeat(1, 1fr);
 }
@@ -594,220 +824,143 @@ div {
 
 /* Fin_Page_CV **********************************************************************************/
 
-/* Début_Page d'erreur */
-
-/* #body_error {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-}
-
-#message_error {
-    width: 650px;
-    height: 400px;
-    background-image: url(../assets/img/error_404.jpg);
-    background-size: cover;
-    margin: 20px;
-    padding: 60px;
-    padding-top: 90px;
-    color: rgb(170, 65, 65);
-    font-size: 1.2em;
-    text-align: center;
-    font-weight: bold;
-}
-
-.go_back {
-    margin-top: 130px;
-}
-*/
-
-
-/* Fin_Page d'erreur */
-
-/* Début_Page_Réalisations **********************************************************************************/
-
-#main_rea_colonne {
-    display: flex;
-    flex-direction: column
-}
-
-.info {
-    margin: 0;
-    /* min-height: 100vh; */
-    font-family: 'Open Sans';
-    background: #fafafa;
-}
-
-a {
-    color: inherit;
-}
-
-.container_projets_web {
-    position: static;
-    width: auto;
-    height: 500px;
-    background-color: rgb(234, 206, 206);
-    padding: 20px;
-    text-align: center;
-    margin-bottom: 50px;
-}
-
-.container_projets_code {
-    
-    background-color: #84bb7d;
-}
-
-.cards-wrapper {
-    position: static;
-
-    /* width: auto; */
-    /* height: auto; */
-    display: grid;
-    justify-content: center;
-    align-items: center;
-    grid-template-columns: 250px 250px 250px;
-    grid-template-rows: 300px 300px 300px;
-    grid-gap: 4rem;
-    padding: 4rem;
-    margin: 0 auto;
-    width: max-content;
-}
-
-.card {
-    width: 250px;
-    height: 300px;
-    font-family: 'Heebo';
-    opacity: 0.85;
-    background-repeat: no-repeat;
-    background-size: 100% 150%;
-    font-size: 0.5em;
-    color: white;
-    border-radius: 10px;
-    display: flex;
-    justify-content: end;
-    background-size: 250px 300px;
-    /* background-position: center; */
-    box-shadow: 0 0 2em -1em black;
-    transition: all, 1;
-    /* position: relative; */
-    /* overflow: hidden; */
-    border: 1px solid #19b604;
-    text-decoration: none;
-}
-
-.text_card {
-    width: 250px;
-    height: 110px;
-    background-color: #390805;
-    padding: 10px;
-    border-top: 1px solid black;
-    color: var(--color-texte-light);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-}
-
-.card:hover {
-    transform: rotate(0deg);
-    transform: scale(1.05, 1.05);
-}
-
-.card h1 {
-    margin-bottom: 10px;
-    font-size: 1.5em;
-    line-height: 1.2em;
-}
-
-.card p {
-    font-size: 0.85em;
-    font-family: 'Open Sans';
-    margin-top: 0.5em;
-    line-height: 2em;
-}
-
-.card .tags {
-    display: flex;
-}
-
-.card .tags .tag {
-    font-size: 0.95em;
-    background: rgba(255, 255, 255, 0.5);
-    border-radius: 0.3rem;
-    padding: 0 0.5em;
-    margin-right: 0.5em;
-    line-height: 1.5em;
-    transition: all,
-        var(--transition-time);
-    color: #1d033b;
-}
-
-.card:hover .tags .tag {
-    background: var(--color-texte-dark);
-    color: rgb(192, 243, 117);
-}
-
-/* .card .date {
-  position: absolute;
-  top: 0;
-  right: 0;
-  font-size: 0.75em;
-  padding: 1em;
-  line-height: 1em;
-  opacity: .8;
-} */
-
-/* .card:before,
-.card:after {
-    content: '';
-    transform: scale(0);
-    transform-origin: top left;
-    border-radius: 50%;
-    position: absolute;
-    left: -50%;
-    top: -50%;
-    z-index: -5;
-    transition: all, var(--transition-time);
-    transition-timing-function: ease-in-out;
-} */
-
-/* .card:before {
-    opacity: 0.5;
-    width: 250%;
-    height: 250%;
-}
-
-.card:after {
-    opacity: 0.9;
-    width: 200%;
-    height: 200%;
-} */
-
-.card:hover {
-    opacity: 0.9;
-
-    color: var(--color-texte-dark);
-}
-
-.info {
-    font-size: 1.2em;
-    display: flex;
-    padding: 1em 3em;
-    height: 3em;
-}
-
-.info h1 {
-    font-size: 1em;
-    font-weight: normal;
-}
-
-
-/* Fin_Page_Réalisations **********************************************************************************/
-
-/* MEDIA QUERIES */
+/* Début_MEDIA QUERIES ********************************/
 @media screen and (max-width: 1200px) {
+
+    /* Début_MEDIA QUERIES **********************************1200px Navigation*/
+
+    .nav a {
+        font-size: 0.5em;
+    }
+
+    .logo {
+        margin-right: 10vw;
+    }
+
+    /* Début_MEDIA QUERIES **********************************1200px Navigation*/
+    /* Début_MEDIA QUERIES **********************************1200px Acceuil*/
+
+    /* Fin_MEDIA QUERIES **********************************1200px Acceuil*/
+    #titre_dev {
+        font-size: 0.8em;
+    }
+
+    #my_header {
+        width: 200px;
+    }
+
+    #my_header h1 {
+        font-size: 1.5em;
+    }
+
+    #acroche {
+        width: 280px;
+        margin-top: 40px;
+        margin-left: 0px;
+        font-size: 0.6em;
+    }
+
+    /* Début_MEDIA QUERIES **********************************1200px Réalisations*/
+    .cards-wrapper {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .container_projets_web {
+        height: 850px;
+    }
+
+    /* Fin_MEDIA QUERIES **********************************1200px Réalisations*/
+    /* Début_MEDIA QUERIES **********************************1200px Veilles Technologiques*/
+
+    /* Fin_MEDIA QUERIES **********************************1200px Veilles Technologiques*/
+    /* Début_MEDIA QUERIES **********************************1200px CV*/
+    #cv_texte {
+        margin-left: 250px;
+        width: 75vw;
+    }
+
+    #cv_aside_left {
+        width: 25vw;
+        height: 73vh;
+        font-size: 2.4vw;
+    }
+
+    #cv_aside_left img {
+        width: 15vw;
+    }
+    #cv_aside_left a{
+        width: 200px;
+    }
+    #telecharger_cv {
+        width: 130px;
+        font-size: 0.8em;
+        margin-left: 35px;
+    }
+
+    .cv_date p,
+    .cv_date strong,
+    .cv_competence p,
+    .atouts_box p,
+    .atouts_box span,
+    .atouts_box h4 {
+        font-size: 0.8em;
+    }
+
+    .cv_date h3,
+    .cv_competence h4 {
+        font-size: 0.8em;
+    }
+
+    section>h2 {
+        font-size: 0.5em;
+    }
+
+    .cv_competence_grid {
+        display: grid;
+        grid-template-rows: repeat(4, 1fr);
+        gap: 20px;
+    }
+
+    .cv_competence span {
+        font-size: 0.8em;
+
+    }
+
+    .cv_competence_img {
+        width: 70vw;
+    }
+
+    /* Fin_MEDIA QUERIES **********************************1200px CV*/
+
+
+}
+
+@media screen and (max-width: 900px) {
+
+    /* Début_MEDIA QUERIES **********************************900px Navigation*/
+
+
+    .nav a {
+        font-size: 0.36em;
+    }
+
+    .logo {
+        margin-right: 10vw;
+    }
+
+    /* Début_MEDIA QUERIES **********************************900px Navigation*/
+    /* Début_MEDIA QUERIES **********************************900px Acceuil*/
+    #titre_dev {
+        font-size: 0.8em;
+    }
+
+    #my_header h1 {
+        font-size: 1.5em;
+    }
+
+    /* Fin_MEDIA QUERIES **********************************900px Acceuil*/
+
+    /* Début_MEDIA QUERIES **********************************900px Réalisations*/
     .cards-wrapper {
         grid-template-columns: 1fr 1fr;
     }
@@ -815,36 +968,362 @@ a {
     .container_projets_web {
         height: 900px;
     }
+
+    /* Fin_MEDIA QUERIES **********************************900px Réalisations*/
+
+    /* Début_MEDIA QUERIES **********************************900px Veilles Technologiques*/
+
+    /* Fin_MEDIA QUERIES **********************************900px Veilles Technologiques*/
+    /* Début_MEDIA QUERIES **********************************900px CV*/
+    #cv_texte {
+        margin-left: 250px;
+        width: 75vw;
+    }
+
+    #cv_aside_left {
+        width: 25vw;
+        height: 73vh;
+        font-size: 2.5vw;
+    }
+
+    #cv_aside_left img {
+        width: 15vw;
+    }
+#cv_aside_left a{
+    width: 180px;
+}
+    #telecharger_cv {
+        width: 130px;
+        font-size: 0.8em;
+        margin-left: 25px;
+    }
+
+    .cv_date p,
+    .cv_date strong,
+    .cv_competence p,
+    .atouts_box p,
+    .atouts_box span,
+    .atouts_box h4 {
+        font-size: 0.8em;
+    }
+
+    .cv_date h3,
+    .cv_competence h4 {
+        font-size: 0.8em;
+    }
+
+    section>h2 {
+        font-size: 0.5em;
+    }
+
+    .cv_competence_grid {
+        display: grid;
+        grid-template-rows: repeat(4, 1fr);
+        gap: 20px;
+    }
+
+    .cv_competence span {
+        font-size: 0.8em;
+
+    }
+
+    .cv_competence_img {
+        width: 70vw;
+    }
+
+
+
 }
 
-@media screen and (max-width: 900px) {
+
+
+
+
+
+
+/* Fin_MEDIA QUERIES **********************************900px CV*/
+
+
+
+
+@media screen and (max-width: 744px) {
+    /* Début_MEDIA QUERIES **********************************744px Navigation*/
+
+    .nav a {
+        font-size: 0.2em;
+        padding: 20px 10px;
+        font-size: 0.30em;
+    }
+
+    .logo {
+        width: 40px;
+        height: 40px;
+        margin-right: 5px;
+        margin-top: 5px;
+    }
+
+    .nav {
+        height: 50px;
+    }
+
+    #main_colonne_aacueil {
+        /* height: 420px; */
+        height: 600px;
+        margin-top: 40px;
+        margin-bottom: 10px;
+    }
+
+    #main_colonne_aacueil img {
+        width: 200px;
+        /* height: 200px; */
+        border-radius: 5px;
+    }
+
+    /* Début_MEDIA QUERIES **********************************744px Navigation*/
+    /* Début_MEDIA QUERIES **********************************744px Acceuil*/
+
+    /* Fin_MEDIA QUERIES **********************************744px Acceuil*/
+    #titre_dev {
+        font-size: 0.8em;
+    }
+
+    #my_header {
+        width: 300px;
+        margin-bottom: -20px;
+        margin-top: 10px;
+
+    }
+
+    #my_header h1 {
+        font-size: 1.5em;
+        width: 200px;
+
+    }
+
+    #main_colonne_aacueil {
+        flex-direction: column;
+    }
+
+    #acroche {
+        width: 350px;
+        margin-top: 40px;
+        margin-left: 0px;
+    }
+
+    /* Début_MEDIA QUERIES ********************************** 744pxRéalisations*/
     .cards-wrapper {
         grid-template-columns: 1fr;
     }
 
     .container_projets_web {
-        height: 1350px;
+        height: 1200px;
+    }
+
+    .cards-wrapper {
+        padding: 4rem 2rem;
+    }
+
+    .card {
+        max-width: calc(100vw - 4rem);
     }
 
 
+/* Fin_MEDIA QUERIES **********************************744px Réalisations*/
+/* Début_MEDIA QUERIES **********************************Veilles Technologiques*/
 
-    @media screen and (max-width: 500px) {
-        .cards-wrapper {
-            padding: 4rem 2rem;
-        }
+/* Fin_MEDIA QUERIES **********************************Veilles Technologiques*/
+/* Début_MEDIA QUERIES **********************************744px CV*/
+#cv_texte {
+    margin-left: 180px;
+    width: 65vw;
+}
 
-        .card {
-            max-width: calc(100vw - 4rem);
-        }
+#cv_aside_left {
+    padding: 3px;
+    width: 30vw;
+    height: 73vh;
+    font-size: 3.4vw;
+}
+
+#cv_aside_left img {
+    width: 18vw;
+}
+#cv_aside_left a{
+    width: 110px;
+}
+#telecharger_cv {
+    width: 80px;
+    font-size: 0.7em;
+    margin-left: 15px;
+}
+
+.cv_date p,
+.cv_date strong,
+.cv_competence p,
+.atouts_box p,
+.atouts_box span,
+.atouts_box h4,
+.loisirs-box p {
+    font-size: 0.6em;
+}
+
+.cv_date h3,
+.cv_competence h4 {
+    font-size: 0.8em;
+}
+
+section>h2 {
+    font-size: 0.3em;
+}
+
+.cv_competence_grid {
+    gap: 5px;
+}
+
+.cv_competence span {
+    font-size: 0.8em;
+
+}
+
+.cv_competence_img {
+    width: 70vw;
+}
+}
+/* Fin_MEDIA QUERIES **********************************744px CV*/
+
+
+
+@media screen and (max-width: 390px) {
+    /* Début_MEDIA QUERIES **********************************390px Navigation*/
+
+    .nav a {
+        font-size: 0.2em;
+        padding: 20px 9px;
+        font-size: 0.30em;
     }
 
-    @media screen and (max-width: 450px) {
-        .info {
-            display: block;
-            text-align: center;
-        }
+    .logo {
+        width: 40px;
+        height: 40px;
+        margin-right: 5px;
+        margin-top: 5px;
+    }
 
-        .info h1 {
-            margin: 0;
-        }
-    }}
+    .nav {
+        height: 50px;
+    }
+
+    /* .logo:hover {
+                transform: scale(1,1);
+            } */
+    /* Début_MEDIA QUERIES **********************************390px Navigation*/
+    /* Début_MEDIA QUERIES **********************************390px Acceuil*/
+    #titre_dev {
+        font-size: 0.8em;
+    }
+
+    #my_header {
+        width: 300px;
+        margin-bottom: -20px;
+        margin-top: 10px;
+
+    }
+
+    #my_header h1 {
+        font-size: 1.5em;
+        width: 200px;
+
+    }
+
+    #main_colonne_aacueil {
+        flex-direction: column;
+    }
+
+    #acroche {
+        width: 350px;
+        margin-top: 40px;
+        margin-left: 0px;
+    }
+
+    /* Fin_MEDIA QUERIES **********************************390px Acceuil*/
+
+    /* Début_MEDIA QUERIES **********************************390px Réalisations*/
+    .cards-wrapper {
+        grid-template-columns: 1fr;
+    }
+
+    .container_projets_web {
+        height: 1200px;
+    }
+
+    .info {
+        display: block;
+        text-align: center;
+    }
+
+    .info h1 {
+        margin: 0;
+    }
+
+
+    /* Fin_MEDIA QUERIES **********************************390px Réalisations*/
+    /* Début_MEDIA QUERIES **********************************Veilles Technologiques*/
+
+    /* Fin_MEDIA QUERIES **********************************Veilles Technologiques*/
+    /* Début_MEDIA QUERIES **********************************390px CV*/
+    #cv_texte {
+        margin-left: 100px;
+        width: 75vw;
+    }
+
+    #cv_aside_left {
+        width: 30vw;
+        height: 73vh;
+        font-size: 3.5vw;
+    }
+
+    #cv_aside_left img {
+        width: 18vw;
+    }
+
+    #telecharger_cv {
+        width: 80px;
+        font-size: 0.9em;
+        margin-left: 15px;
+    }
+
+    .cv_date p,
+    .cv_date strong,
+    .cv_competence p,
+    .atouts_box p,
+    .atouts_box span,
+    .atouts_box h4,
+    .loisirs-box p {
+        font-size: 0.6em;
+    }
+
+    .cv_date h3,
+    .cv_competence h4 {
+        font-size: 0.8em;
+    }
+
+    section>h2 {
+        font-size: 0.3em;
+    }
+
+    .cv_competence_grid {
+        gap: 5px;
+    }
+
+    .cv_competence span {
+        font-size: 0.8em;
+
+    }
+
+    .cv_competence_img {
+        width: 70vw;
+    }
+
+    /* Fin_MEDIA QUERIES **********************************390px CV*/
+
+}
