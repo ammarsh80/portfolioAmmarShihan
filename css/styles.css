@@ -158,7 +158,8 @@ a {
     --color-primary: #2C3138;
     --color-secondary: #093c5c;
     --color-violet: #6A3AA0;
-    --color-background: #cae1f2;
+    /* --color-background: #d8d7d7; */
+    --color-background: #f5d5d5;
     --color-texte-light: #e8efcc;
     --color-texte-dark: #444444;
     --color-noir: #000;
@@ -317,7 +318,7 @@ header img {
 .nav :nth-child(3):hover,
 .nav :nth-child(4):hover,
 .nav :nth-child(5):hover,
-h2:hover,
+/* h2:hover, */
 #cv_aside_left :nth-child(2):hover,
 #cv_aside_left :nth-child(3):hover,
 #cv_aside_left :nth-child(4):hover,
@@ -434,7 +435,7 @@ footer h2 {
 
 #main_rea_colonne {
     display: flex;
-    flex-direction: column
+    flex-direction: column;
 }
 
 .info {
@@ -452,7 +453,7 @@ a {
     position: static;
     width: auto;
     height: 500px;
-    background-color: rgb(234, 206, 206);
+    background-color: rgb(226, 177, 177);
     padding: 20px;
     text-align: center;
     margin-bottom: 50px;
@@ -460,14 +461,15 @@ a {
 
 .container_projets_code {
 
-    background-color: #84bb7d;
+    background-color: #c3d6c1;
+    /* background-color: #051d03; */
 }
 
 .cards-wrapper {
     position: static;
 
     /* width: auto; */
-    /* height: auto; */
+    height: 550px;
     display: grid;
     justify-content: center;
     align-items: center;
@@ -515,9 +517,21 @@ a {
 
 }
 
+.text_card_gitHub {
+    width: 250px;
+    height: 25px;
+    background-color: #390805;
+    font-size: 0.6em;
+    border-top: 2px solid rgb(81, 64, 64);
+    /* color: var(--color-texte-light); */
+    color: #878585;
+
+}
+
 .card:hover {
     transform: rotate(0deg);
     transform: scale(1.05, 1.05);
+    margin-bottom: 5px;
 }
 
 .card h1 {
@@ -611,7 +625,155 @@ a {
 
 /* Fin_Page_Réalisations **********************************************************************************/
 
+/* Début_Page_Veilles Technologiques **********************************************************************************/
 
+#main_colonne_veilles {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.article_veille {
+    width: 80vw;
+    background-color: #e2b1b1;
+    margin-right: 10vw;
+    padding: 10px 20px;
+    border-radius: 10px 10px 0px 0px;
+    box-shadow: 1px 1px 5px #d1be11;
+    margin-bottom: 40px;
+
+}
+
+
+.article_veille_first {
+    margin-top: -100px;
+}
+
+.article_veille h1,
+.veille h1 {
+    /* text-align: center;
+    color: var(--color-texte-dark);*/
+    margin-bottom: 15px;
+    width: 30vw;
+    line-height: 3.5rem;
+    color: var(--color-texte-light);
+    background-color: #390805;
+    font-size: 3vw;
+    border-radius: 5px;
+    text-align: center;
+    font-family: "Courgette", sans-serif;
+    margin-left: 25vw;
+    box-shadow: 1px 1px 3px yellow;
+}
+
+
+.article_veille h5 {
+    text-align: end;
+    color: var(--color-texte-dark);
+    margin-bottom: 2px;
+    font-size: 0.4em;
+}
+
+.article_veille h1:hover {
+    background-color: #19aa05;
+    color: #2C3138;
+}
+
+.article_veille p:nth-of-type(1) {
+    font-size: 0.6em;
+    text-align: justify;
+    color: rgb(125, 98, 98);
+    margin-bottom: 10px;
+}
+
+
+.article_veille_détail a:nth-child(1),
+.article_veille_détail a:nth-child(2) {
+    width: 100px;
+    font-size: 0.6em;
+    align-self: center;
+    color: rgb(149, 135, 135);
+
+}
+
+.article_veille_détail a:nth-child(1):hover,
+.article_veille_détail a:nth-child(2):hover {
+    font-size: 0.7em;
+    align-self: center;
+    color: rgb(149, 135, 135);
+
+}
+
+.veille {
+    width: 80vw;
+    margin-left: 0vw;
+}
+
+.veille h1 {
+    width: 60vw;
+    margin-left: 10vw;
+    margin-right: 0vw;
+    background-color: #19aa05;
+    color: #390805;
+
+}
+
+.veille p {
+
+    color: #524848;
+    font-size: 0.7em;
+    line-height: 150%;
+    text-align: justify;
+    margin-bottom: 10px;
+
+}
+
+.veille a {
+    text-decoration: underline;
+    color: #19aa05;
+
+
+}
+
+.veille1_img1 {
+    width: 60vw;
+    margin-left: 10vw;
+    margin-bottom: 10px;
+}
+
+.commande_git {
+    font-style: italic;
+    background-color: #979494;
+    padding-left: 20px;
+}
+
+#retour_page_veuilles {
+    background-color: #e2b1b1;
+    width: 105px;
+    position: fixed;
+    bottom: 20px;
+    left: 5px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    text-align: center;
+}
+#retour_page_veuilles:hover{
+    transform: scale(1.05,1.05);
+    background-color: #390805;
+    color: var(--color-texte-light);
+
+}
+
+
+.article_veille_bootstrap{
+    margin-top: -100px;
+}
+/* Fin_Page_Veilles Technologiques **********************************************************************************/
 
 /* Début_Page_CV **********************************************************************************/
 
@@ -683,7 +845,7 @@ section {
     width: 250px;
     /* height: 25px; */
     font-size: 0.65em;
-    color: var(--color-background);
+    color: var(--color-texte-light);
     margin-bottom: 5px;
     text-align: center;
 
@@ -888,9 +1050,11 @@ div {
     #cv_aside_left img {
         width: 15vw;
     }
-    #cv_aside_left a{
+
+    #cv_aside_left a {
         width: 200px;
     }
+
     #telecharger_cv {
         width: 130px;
         font-size: 0.8em;
@@ -989,9 +1153,11 @@ div {
     #cv_aside_left img {
         width: 15vw;
     }
-#cv_aside_left a{
-    width: 180px;
-}
+
+    #cv_aside_left a {
+        width: 180px;
+    }
+
     #telecharger_cv {
         width: 130px;
         font-size: 0.8em;
@@ -1128,67 +1294,70 @@ div {
     }
 
 
-/* Fin_MEDIA QUERIES **********************************744px Réalisations*/
-/* Début_MEDIA QUERIES **********************************Veilles Technologiques*/
+    /* Fin_MEDIA QUERIES **********************************744px Réalisations*/
+    /* Début_MEDIA QUERIES **********************************Veilles Technologiques*/
 
-/* Fin_MEDIA QUERIES **********************************Veilles Technologiques*/
-/* Début_MEDIA QUERIES **********************************744px CV*/
-#cv_texte {
-    margin-left: 180px;
-    width: 65vw;
+    /* Fin_MEDIA QUERIES **********************************Veilles Technologiques*/
+    /* Début_MEDIA QUERIES **********************************744px CV*/
+    #cv_texte {
+        margin-left: 180px;
+        width: 65vw;
+    }
+
+    #cv_aside_left {
+        padding: 3px;
+        width: 30vw;
+        height: 73vh;
+        font-size: 3.4vw;
+    }
+
+    #cv_aside_left img {
+        width: 18vw;
+    }
+
+    #cv_aside_left a {
+        width: 110px;
+    }
+
+    #telecharger_cv {
+        width: 80px;
+        font-size: 0.7em;
+        margin-left: 15px;
+    }
+
+    .cv_date p,
+    .cv_date strong,
+    .cv_competence p,
+    .atouts_box p,
+    .atouts_box span,
+    .atouts_box h4,
+    .loisirs-box p {
+        font-size: 0.6em;
+    }
+
+    .cv_date h3,
+    .cv_competence h4 {
+        font-size: 0.8em;
+    }
+
+    section>h2 {
+        font-size: 0.3em;
+    }
+
+    .cv_competence_grid {
+        gap: 5px;
+    }
+
+    .cv_competence span {
+        font-size: 0.8em;
+
+    }
+
+    .cv_competence_img {
+        width: 70vw;
+    }
 }
 
-#cv_aside_left {
-    padding: 3px;
-    width: 30vw;
-    height: 73vh;
-    font-size: 3.4vw;
-}
-
-#cv_aside_left img {
-    width: 18vw;
-}
-#cv_aside_left a{
-    width: 110px;
-}
-#telecharger_cv {
-    width: 80px;
-    font-size: 0.7em;
-    margin-left: 15px;
-}
-
-.cv_date p,
-.cv_date strong,
-.cv_competence p,
-.atouts_box p,
-.atouts_box span,
-.atouts_box h4,
-.loisirs-box p {
-    font-size: 0.6em;
-}
-
-.cv_date h3,
-.cv_competence h4 {
-    font-size: 0.8em;
-}
-
-section>h2 {
-    font-size: 0.3em;
-}
-
-.cv_competence_grid {
-    gap: 5px;
-}
-
-.cv_competence span {
-    font-size: 0.8em;
-
-}
-
-.cv_competence_img {
-    width: 70vw;
-}
-}
 /* Fin_MEDIA QUERIES **********************************744px CV*/
 
 
@@ -1323,7 +1492,6 @@ section>h2 {
     .cv_competence_img {
         width: 70vw;
     }
-
-    /* Fin_MEDIA QUERIES **********************************390px CV*/
-
 }
+
+/* Fin_MEDIA QUERIES **********************************390px CV*/

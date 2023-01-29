@@ -11,9 +11,13 @@
                                 <div class="tag">HTML CSS</div>
                             </div>
                             <p>Réalisé en octobre 2022</p>
+                            
                         </div>
                     </div>
                 </a>
+                <div class="text_card_gitHub">
+                    <a href="https://github.com/ammarsh80/Projet-Couture">Lien GitHub</a>
+                </div>
             </div>
             <div class="card-grid-space">
                 <a href="https://shihan.needemand.com/projets_web/player_audio/index.html">
@@ -28,6 +32,9 @@
                         </div>
                     </div>
                 </a>
+                <div class="text_card_gitHub">
+                    <a href="https://github.com/ammarsh80/player_audio">Lien GitHub</a>
+                </div>
             </div>
 
             <div class="card-grid-space">
@@ -43,6 +50,9 @@
                         </div>
                     </div>
                 </a>
+                <div class="text_card_gitHub">
+                    <a href="https://github.com/ammarsh80/PHP_TP_Integration_En_PHP_Badminton">Lien GitHub</a>
+                </div>
             </div>
         </section>
     </div>
@@ -63,6 +73,9 @@
                         </div>
                     </div>
                 </a>
+                <div class="text_card_gitHub">
+                    <a href="https://github.com/ammarsh80/Calculatrice">Lien GitHub</a>
+                </div>
             </div>
             <div class="card-grid-space">
                 <a href="https://shihan.needemand.com/projets_web/EXOJSMarquezDesPoints/index.html">
@@ -77,6 +90,9 @@
                         </div>
                     </div>
                 </a>
+                <div class="text_card_gitHub">
+                    <a href="https://github.com/ammarsh80/Quiz">Lien GitHub</a>
+                </div>
             </div>
             <div class="card-grid-space">
                 <a href="https://shihan.needemand.com/projets_web/EXOJSChronometre/index.html">
@@ -91,7 +107,12 @@
                         </div>
                     </div>
                 </a>
+                <div class="text_card_gitHub">
+                    <a href="https://github.com/ammarsh80/MonChronometre">Lien GitHub</a>
+                </div>
             </div>
         </section>
     </div>
+    <img src="./assets/img/arrow_up.png" onclick="topFunction()" id="topBtn" alt="">
+
 </main>
