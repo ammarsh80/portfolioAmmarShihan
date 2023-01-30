@@ -159,7 +159,8 @@ a {
     --color-secondary: #093c5c;
     --color-violet: #6A3AA0;
     /* --color-background: #d8d7d7; */
-    --color-background: #f5d5d5;
+    /* --color-background: #f5d5d5; */
+    --color-background: #ede8e8;
     --color-texte-light: #e8efcc;
     --color-texte-dark: #444444;
     --color-noir: #000;
@@ -294,7 +295,10 @@ header img {
 .nav {
     width: 100vw;
     height: 60px;
-    background-color: var(--color-noir);
+    /* background-color: var(--color-noir); */
+    background-color: rgb(16, 15, 15);
+    /* background-color: #390805; */
+
     text-align: center;
     display: flex;
     justify-content: center;
@@ -314,10 +318,7 @@ header img {
     letter-spacing: 1px;
 }
 
-.nav :nth-child(2):hover,
-.nav :nth-child(3):hover,
-.nav :nth-child(4):hover,
-.nav :nth-child(5):hover,
+
 /* h2:hover, */
 #cv_aside_left :nth-child(2):hover,
 #cv_aside_left :nth-child(3):hover,
@@ -326,11 +327,30 @@ header img {
 #cv_aside_left :nth-child(6):hover {
     /* background-color: var(--color-texte-light); */
     /* background-color: #f2d4cd; */
-    background-color: #19aa05;
+    /* background-color: #19aa05; */
+    /* background-color: #6e726e; */
+    background-color: #bdbca3;
+
     color: #2C3138;
 }
+#cv_aside_left :nth-child(2),
+#cv_aside_left :nth-child(3),
+#cv_aside_left :nth-child(4),
+#cv_aside_left :nth-child(5),
+#cv_aside_left :nth-child(6) {
+    /* background-color: var(--color-texte-light); */
+    /* background-color: #f2d4cd; */
+    /* background-color: #19aa05; */
+    border-radius: 3px;
+}
 
-
+.nav :nth-child(2):hover,
+.nav :nth-child(3):hover,
+.nav :nth-child(4):hover,
+.nav :nth-child(5):hover{
+    background-color: #bdbca3;
+    color: #2C3138;
+}
 
 /* Fin_Navbar *******************************************/
 
@@ -388,7 +408,8 @@ footer h2 {
     text-align: center;
     justify-content: center;
     color: var(--color-texte-light);
-    background-color: var(--color-noir);
+    /* background-color: var(--color-noir); */
+    background-color: rgb(16, 15, 15);
     padding: 30px;
     border-radius: 10px;
     font-family: Calibri, 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
@@ -402,7 +423,7 @@ footer h2 {
 
 /* Début_Page d'erreur */
 
-/* #body_error {
+#body_error {
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -415,10 +436,10 @@ footer h2 {
     background-image: url(../assets/img/error_404.jpg);
     background-size: cover;
     margin: 20px;
-    padding: 60px;
-    padding-top: 90px;
+    padding-bottom: 50px;
+    padding-top: 70px;
     color: rgb(170, 65, 65);
-    font-size: 1.2em;
+    font-size: 0.8em;
     text-align: center;
     font-weight: bold;
 }
@@ -426,7 +447,7 @@ footer h2 {
 .go_back {
     margin-top: 130px;
 }
-*/
+
 
 
 /* Fin_Page d'erreur */
@@ -457,6 +478,7 @@ a {
     padding: 20px;
     text-align: center;
     margin-bottom: 50px;
+    border-radius: 5px;
 }
 
 .container_projets_code {
@@ -635,7 +657,7 @@ a {
 
 .article_veille {
     width: 80vw;
-    background-color: #e2b1b1;
+    background-color:#e2b1b1;
     margin-right: 10vw;
     padding: 10px 20px;
     border-radius: 10px 10px 0px 0px;

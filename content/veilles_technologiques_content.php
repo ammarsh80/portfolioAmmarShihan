@@ -13,25 +13,42 @@
                 </p>
             </div>
             <div class="article_veille_détail">
-                <a href="#veille1">Lire plus...</a>
+                <a href="index.php?page=veilles_technologiques_git">Lire plus...</a>
                 <h5>Date de réalisation: 18/10/2022</h5>
             </div>
         </article>
         <article class="article_veille">
             <div>
-            <a href="index.php?page=veilles_technologiques_bootstrap">
+                <a href="index.php?page=veilles_technologiques_bootstrap">
 
-                <h1> Bootstrap </h1></a>
+                    <h1> Bootstrap </h1>
+                </a>
                 <p>Bootstrap est le Framework (open source) le plus populaire pour le développement front-end. Créé par Twitter,
                     <a href="https://get.foundation/">son principale concurrent est Foundation</a>
                 </p>
             </div>
             <div class="article_veille_détail">
-                <a href="">Lire plus...</a>
+                <a href="index.php?page=veilles_technologiques_bootstrap">Lire plus...</a>
+                <h5>Date de réalisation: 03-01-2023</h5>
+            </div>
+        </article>
+        <article class="article_veille">
+            <div>
+                <a href="index.php?page=veilles_technologiques_audio">
+
+                    <h1> L’élément audio embarqué <audio> </h1>
+                </a>
+                <p>L'élément HTML (audio) est utilisé afin d'intégrer un contenu sonore dans un document. 
+                    Il peut contenir une ou plusieurs sources audio représentées avec l'attribut (src) ou 
+                    l'élément (source) (le navigateur choisira celle qui convient le mieux). Il peut également être la destination de médias diffusés en continu, en utilisant un MediaStream.</p>
+                </p>
+            </div>
+            <div class="article_veille_détail">
+                <a href="index.php?page=veilles_technologiques_audio">Lire plus...</a>
                 <h5>Date de réalisation: 03-01-2023</h5>
             </div>
         </article>
     </section>
-    
+
     <img src="./assets/img/arrow_up.png" onclick="topFunction()" id="topBtn" alt="">
 </main>

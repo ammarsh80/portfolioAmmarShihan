@@ -1,6 +1,7 @@
 <?php
 
-$page = filter_input(INPUT_GET, "page", FILTER_SANITIZE_STRING);
+$page = trim(filter_var($_GET['page'], FILTER_SANITIZE_FULL_SPECIAL_CHARS));
+
 include 'template.php';
 ?>
 
