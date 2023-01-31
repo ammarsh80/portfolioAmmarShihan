@@ -3,7 +3,5 @@
         <a href="index.php?page=accueil">
             <img src="./assets/img/logo.PNG" class="logo" alt="logo-portfolio">
         </a>
-    </div> -->
-
-    
+    </div> -->    
 </header>

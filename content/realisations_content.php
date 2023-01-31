@@ -2,7 +2,7 @@
     <div class="container_projets_web">Projets Web
         <section class="cards-wrapper">
             <div class="card-grid-space">
-                <a href="https://shihan.needemand.com/projets_web/projet_couture/evenements/evenement.html">
+                <a href="https://shihan.needemand.com/projets_web/projet_couture/">
                     <div class="card" style="background-image: url(./assets/img/couture.jpg)">
                         <div class="text_card">
                             <h1>Site Web Statique</h1>
@@ -113,6 +113,6 @@
             </div>
         </section>
     </div>
-    <img src="./assets/img/arrow_up.png" onclick="topFunction()" id="topBtn" alt="">
+    <img src="./assets/img/arrow_up.png" onclick="topFunction()" id="topBtn" alt="bouton retour en haut de page">
 
 </main>

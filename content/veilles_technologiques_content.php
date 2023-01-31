@@ -3,7 +3,7 @@
     <section>
         <article class="article_veille article_veille_first">
             <div>
-                <a href="index.php?page=veilles_technologiques_git">
+                <a href="index.php?page=veilles_technologiques_git#veille1">
 
                     <h1>Git </h1>
                 </a>
@@ -13,13 +13,13 @@
                 </p>
             </div>
             <div class="article_veille_détail">
-                <a href="index.php?page=veilles_technologiques_git">Lire plus...</a>
+                <a href="index.php?page=veilles_technologiques_git#veille1">Lire plus...</a>
                 <h5>Date de réalisation: 18/10/2022</h5>
             </div>
         </article>
         <article class="article_veille">
             <div>
-                <a href="index.php?page=veilles_technologiques_bootstrap">
+                <a href="index.php?page=veilles_technologiques_bootstrap#veille2">
 
                     <h1> Bootstrap </h1>
                 </a>
@@ -28,13 +28,13 @@
                 </p>
             </div>
             <div class="article_veille_détail">
-                <a href="index.php?page=veilles_technologiques_bootstrap">Lire plus...</a>
+                <a href="index.php?page=veilles_technologiques_bootstrap#veille2">Lire plus...</a>
                 <h5>Date de réalisation: 03-01-2023</h5>
             </div>
         </article>
         <article class="article_veille">
             <div>
-                <a href="index.php?page=veilles_technologiques_audio">
+                <a href="index.php?page=veilles_technologiques_audio#veille3">
 
                     <h1> L’élément audio embarqué <audio> </h1>
                 </a>
@@ -44,11 +44,11 @@
                 </p>
             </div>
             <div class="article_veille_détail">
-                <a href="index.php?page=veilles_technologiques_audio">Lire plus...</a>
+                <a href="index.php?page=veilles_technologiques_audio#veille3">Lire plus...</a>
                 <h5>Date de réalisation: 03-01-2023</h5>
             </div>
         </article>
     </section>
 
-    <img src="./assets/img/arrow_up.png" onclick="topFunction()" id="topBtn" alt="">
+    <img src="./assets/img/arrow_up.png" onclick="topFunction()" id="topBtn" alt="bouton retour en haut de page">
 </main>

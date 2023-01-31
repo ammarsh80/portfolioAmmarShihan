@@ -3,7 +3,7 @@
     <section>
         <article class="article_veille article_veille_first">
             <div>
-                <a href="#veille1">
+                <a href="#veille3">
 
                     <h1> L’élément audio embarqué <audio> </h1>
                 </a>
@@ -13,13 +13,13 @@
                 </p>
             </div>
             <div class="article_veille_détail">
-                <a href="#veille1">Lire plus...</a>
+                <a href="#veille3">Lire plus...</a>
                 <h5>Date de réalisation: 23-12-2022</h5>
             </div>
         </article>
 
     </section>
-    <div id="veille1" class="veille1"></div>
+    <div id="veille3" class="veille1"></div>
     <section class="veille">
         <article>
             <h1>L’élément audio embarqué </h1>
@@ -54,7 +54,7 @@
         </article>
 
     </section>
-    <img src="./assets/img/arrow_up.png" onclick="topFunction()" id="topBtn" alt="">
+    <img src="./assets/img/arrow_up.png" onclick="topFunction()" id="topBtn" alt="bouton retour en haut de page">
     <a href="index.php?page=veilles_technologiques">
 
         <div id="retour_page_veuilles"> Retour vers Veilles Technologiques</div>

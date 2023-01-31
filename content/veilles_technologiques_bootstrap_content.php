@@ -1,7 +1,7 @@
 <main id="main_colonne_veilles">
 
     <section>
-        <article class="article_veille article_veille_bootstrap">
+        <article class="article_veille article_veille_first">
             <div>
                 <a href="#veille2">
                     <h1> Bootstrap </h1>
@@ -35,24 +35,24 @@
             <p>Comment on peut utiliser Bootstrap ?</p>
             <p>(CDN, Téléchargement, installation en ligne de commande,) </p>
             <p>1- Copier-coller un lien CDN (Content Delivery Network)</p>
-            <img src="./assets/img/img_veille_bootstrap/1.png" alt="" class="veille1_img1">
+            <img src="./assets/img/img_veille_bootstrap/1.png" alt="CDN bootstrap" class="veille1_img1">
             <p>2- Téléchargement et utilisation des fichiers voulus </p>
-            <img src="./assets/img/img_veille_bootstrap/2.png" alt="" class="veille1_img1">
+            <img src="./assets/img/img_veille_bootstrap/2.png" alt="télécharger bootstrap" class="veille1_img1">
             <p>(ici le fichier bootstrap.min.css contient l’essentiel de Bootstrap css)</p>
-            <img src="./assets/img/img_veille_bootstrap/3.png" alt="" class="veille1_img1">
+            <img src="./assets/img/img_veille_bootstrap/3.png" alt="link bootstrap css" class="veille1_img1">
             <br><br>
             <p>3- installation en ligne de commande (Git)</p>
             <p class="commande_git"> npm install bootstrap@5.3.0-alpha1</p>
-            <img src="./assets/img/img_veille_bootstrap/4.png" alt="" class="veille1_img1">
+            <img src="./assets/img/img_veille_bootstrap/4.png" alt="installer bootstrap en ligne de commande" class="veille1_img1">
             <p>Exemple</p>
-            <img src="./assets/img/img_veille_bootstrap/5.png" alt="" class="veille1_img1">
+            <img src="./assets/img/img_veille_bootstrap/5.png" alt="exemple boutons sur bootstrap" class="veille1_img1">
             <p>Bootstrap et le responsif ?</p>
             <p>class responsive bootstrap (ex. col-xs-nombreDeColonnes(de 1 à 12)</p>
             <p>Attention : la balise parent doit avoir la classe .row (que est une classe bootstrap annoncant la gride …)
             </p>
-            <img src="./assets/img/img_veille_bootstrap/6.png" alt="" class="veille1_img1">
+            <img src="./assets/img/img_veille_bootstrap/6.png" alt="exemple grid sur bootstrap" class="veille1_img1">
             <p>Exemple responsif : Mobile, Tablette & Desktop</p>
-            <img src="./assets/img/img_veille_bootstrap/7.png" alt="" class="veille1_img1">
+            <img src="./assets/img/img_veille_bootstrap/7.png" alt="exemple classes sur bootstrap" class="veille1_img1">
 
             <p>Et JavaScript, Bootstrap gère-t-il JavaScript?</p>
             <p>Avant, il fallait installer jQuery pour que ça fonctionne …
@@ -73,18 +73,18 @@
             <p>Bootsnipp</p>
             <p>Une communauté qui propose des choses déjà toute faites par des développeurs</p>
 <p>Gratuit</p>
-<img src="./assets/img/img_veille_bootstrap/8.png" alt="" class="veille1_img1">
+<img src="./assets/img/img_veille_bootstrap/8.png" alt="Bootsnip gratuit" class="veille1_img1">
 <p>Gratuit mais il faut créer un compte…</p>
-<img src="./assets/img/img_veille_bootstrap/9.png" alt="" class="veille1_img1">
+<img src="./assets/img/img_veille_bootstrap/9.png" alt="Bootsnip gratuit avec connexion" class="veille1_img1">
 <p>Ou encore payant… </p>
-<img src="./assets/img/img_veille_bootstrap/10.png" alt="" class="veille1_img1">
+<img src="./assets/img/img_veille_bootstrap/10.png" alt="Bootsnip payant" class="veille1_img1">
 <p>Il y a aussi bootswatch qui propose des thèmes toutes faites aussi (copier-coller !)</p>
-<img src="./assets/img/img_veille_bootstrap/11.png" alt="" class="veille1_img1">
+<img src="./assets/img/img_veille_bootstrap/11.png" alt="bootswatch" class="veille1_img1">
 <p>Conclusion</p>
 <p>Des morceaux de codes à copier-coller
     Eventuellement, maîtriser les noms des classes les plus importantes pour gagner de temps..
 </p>
-<img src="./assets/img/img_veille_bootstrap/12.png" alt="" class="veille1_img1">
+<img src="./assets/img/img_veille_bootstrap/12.png" alt="classes bootstrap sur w3 school" class="veille1_img1">
 <p>Et profiter de CSS & JavaScript compilés !!</p>
 <br>
 <br>
@@ -101,7 +101,7 @@ de plus en plus ??!!</p>
 
 
 
-    <img src="./assets/img/arrow_up.png" onclick="topFunction()" id="topBtn" alt="">
+    <img src="./assets/img/arrow_up.png" onclick="topFunction()" id="topBtn" alt="bouton retour en haut de page">
     <a href="index.php?page=veilles_technologiques">
 
         <div id="retour_page_veuilles"> Retour vers Veilles Technologiques</div>

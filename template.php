@@ -9,13 +9,6 @@ include "common/head.php";
         <?php
 $page = trim(filter_var($_GET['page'], FILTER_SANITIZE_FULL_SPECIAL_CHARS));
 
-        // include "common/header.php";
-        // include "common/navigation.php";
-
-        // include "content/accueil_content.php";
-
-        // include "common/footer.php";
-
         if (!isset($page) || (($page !== 'accueil') &&
          ($page !== 'realisations') && 
          ($page !== 'veilles_technologiques') && 
@@ -39,6 +32,6 @@ $page = trim(filter_var($_GET['page'], FILTER_SANITIZE_FULL_SPECIAL_CHARS));
         }
         ?>
 </body>
-<script src="css/main.js"></script>
+<script src="js/main.js"></script>
 
 </html>

@@ -1,11 +1,6 @@
 <main id="main_colonne_cv">
     <aside id="cv_aside_left">
         <img src="./assets/img/photo_profile.jpg" alt="Photo de profile">
-        <!-- <a href=""><p>Formation</p></a>
-        <a href=""><p>Expérience professionnelle</p></a>
-        <a href=""><p>Compétences</p></a>
-        <a href=""><p>Atouts</p></a>
-        <a href=""><p>Loisirs & Centres d’intérêt</p></a> -->
         <a href="#formation">Formation</a>
         <a href="#exp_prof">Expérience professionnelle</a>
         <a href="#comp">Compétences</a>
@@ -14,7 +9,7 @@
         <a href="./assets/img/CV_Ammar_SHIHAN.pdf" id="lien_cv">
             <div id="telecharger_cv">Téléchargez mon CV</div>
         </a>
-
+        <a href="mailto:ammarsh80@hotmail.com">Me Contacter</a>
     </aside>
     <div id="cv_texte">
         <div id="formation"></div>
@@ -34,8 +29,6 @@
                     <strong> Doctorat en écologie et biodiversité,</strong>
                     <p> Université de Montpellier, France.</p>
                 </div>
-
-                <!-- <input type="button" class="smooth" value="haut"> -->
                 <div class="study-box  cv_date">
                     <h3>2011 - 2012</h3>
                     <strong> Master deuxième année (M2):</strong>
@@ -54,8 +47,10 @@
                     <p> Spécialité: ressources naturelles renouvelables et
                         environnement. Major national.</p>
                 </div>
+                <hr>
             </div>
         </section>
+
         <div id="exp_prof"></div>
         <section>
             <h2 id="experiences">Expérience professionnelle</h2>
@@ -89,17 +84,14 @@
                     <p> Unité de recherche: Environnement et Grandes Cultures (INRAE-Paris),
                         Sujet du stage : Mesures en conditions contrôlées du dépôt d’ozone sur sol nu.</p>
                 </div>
+                <hr>
             </div>
         </section>
+
         <div id="comp"></div>
         <section>
             <h2 id="skills">Compétences</h2>
-            <!-- <img src="./assets/img/cv_competence.png" alt="" class="cv_competence_img"> -->
             <div class="skills-container">
-                <!-- <div class="skill-box  cv_date">
-                    <p class="dev_deux_partie">Développer la partie Front-end & Back-end d’une application web ou web mobile en intégrant les
-                        recommandations de sécurité :</p>
-                </div> -->
                 <div class="skill-box  cv_competence">
                     <h4>Front-end :</h4>
                     <p>
@@ -117,16 +109,8 @@
                         e-commerce.</p>
                     </p>
                 </div>
-                <div class="skill-box  cv_competence">
-                    <h4>Analyses statistiques (logiciel R et XLSTAT): </h4>
-                    <p> Manipuler des grands jeux de données,</p>
-                    <p>Compétence avec de multiples méthodes statistiques: régression linéaire (simple et multiple), ANOVA, Analyses multivariées, Modèles mixtes.</p>
 
-                </div>
-                <hr>
-                <!-- </section>
 
-    <section class="logiciels"> -->
                 <div class="skill-box cv_competence cv_competence_grid">
                     <h4>Compétences Techniques</h4>
                     <div>
@@ -149,11 +133,19 @@
                         <span>Gestion de projet:</span>
                         <p> Git & GitHub, Trello.</p>
                     </div>
+                    <div class="skill-box  cv_competence">
+                        <h4>Analyses statistiques (logiciel R et XLSTAT): </h4>
+                        <p> Manipuler des grands jeux de données,</p>
+                        <p>Compétence avec de multiples méthodes statistiques: régression linéaire (simple et multiple), ANOVA, Analyses multivariées, Modèles mixtes.</p>
+
+                    </div>
                 </div>
+                <hr>
             </div>
         </section>
+
         <div id="atous"></div>
-        <section>
+        <section class="section_atous">
             <h2 id="atouts">Atouts</h2>
             <div class="atouts-container">
                 <div class="skill-box atouts_box">
@@ -161,15 +153,18 @@
                         Rigueur, Fiabilité, Persévérance, Force de proposition,
                         Ponctualité, Polyvalence.
                     </span>
-                    <hr>
+                    <br>
                     <h4>Langues:</h4>
                     <p>
                         Anglais : C1 (EF Standard English Test).
                     </p>
                     <p>Arabe : Langue maternelle.</p>
                 </div>
+                <hr>
+
             </div>
         </section>
+
         <div id="loisir_centre"></div>
         <section id="loisir_centre">
             <h2 id="loisirs">Loisirs & Centres d’intérêt</h2>
@@ -186,6 +181,5 @@
             </div>
         </section>
     </div>
-    <!-- <button onclick="topFunction()" id="topBtn" title="Go to top">Retour en haut</button> -->
-    <img src="./assets/img/arrow_up.png" onclick="topFunction()" id="topBtn" alt="">
+    <img src="./assets/img/arrow_up.png" onclick="topFunction()" id="topBtn" alt="bouton retour en haut de page">
 </main>
