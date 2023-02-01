@@ -546,7 +546,7 @@ a {
 
 .card h1 {
     margin-bottom: 10px;
-    font-size: 1.4em;
+    font-size: 1.3em;
     line-height: 1.2em;
 }
 
@@ -1042,7 +1042,15 @@ div {
         height: 850px;
         margin-bottom: 100px;
     }
+    .card h1 {
+        font-size: 1em;
+    }
 
+    
+    .card p {
+        font-size: 0.65em;
+   
+    }
     .cards-wrapper {
         height: 850px;
         grid-template-columns: 1fr 1fr;
