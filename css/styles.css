@@ -221,8 +221,9 @@ main {
 }
 
 .a_logo {
-    margin-top: -20px;
+    width: 60px;
     height: 60px;
+    margin-top: -20px;
 }
 
 .logo:hover {
@@ -271,6 +272,11 @@ header img {
     font-size: 2em;
 }
 
+#hidden,
+.burger_menu {
+  display: none;
+}
+
 #div_nav {
     display: flex;
     justify-content: end;
@@ -292,14 +298,25 @@ header img {
     z-index: 99;
 
 }
-
-.nav a {
+.nav a:nth-of-type(1) {
+    padding: 20px 10px;
+}
+.nav li {
     color: #e8efcc;
-    padding: 20px 30px;
-    font-size: 0.57em;
-    transition: all 0.3s ease-out;
+    padding: 20px 10px;
+    font-size: 0.54em;
+    transition: all 0.1s ease-out;
     letter-spacing: 1px;
 }
+
+#pages,
+.div_nav_flex{
+    width: 90vw;
+    height: 60px;
+    display: flex;
+    justify-content: flex-end;
+}
+
 
 #cv_aside_left :nth-child(8) {
     color: #e4e49f;
@@ -324,10 +341,10 @@ header img {
     border-radius: 3px;
 }
 
-.nav :nth-child(2):hover,
-.nav :nth-child(3):hover,
-.nav :nth-child(4):hover,
-.nav :nth-child(5):hover {
+#pages :nth-child(1):hover,
+#pages :nth-child(2):hover,
+#pages :nth-child(3):hover,
+#pages :nth-child(4):hover {
     background-color: #bdbca3;
     color: #2C3138;
 }
@@ -375,7 +392,6 @@ footer h2 {
 
 #main_colonne_aacueil img {
     width: 200px;
-    /* height: 200px; */
     border-radius: 5px;
     box-shadow: 0px 0px 5px yellow;
 
@@ -988,7 +1004,7 @@ div {
 
     /* Début_MEDIA QUERIES **********************************1200px Navigation*/
 
-    .nav a {
+    .nav li {
         font-size: 0.5em;
     }
 
@@ -1112,7 +1128,7 @@ div {
         background-color: #dfd0e0;
         width: 105px;
         height: 60px;
-        top: 380px;
+        top: 490px;
         left: 5px;
     }
 
@@ -1202,8 +1218,8 @@ div {
 @media screen and (max-width: 900px) {
 
     /* Début_MEDIA QUERIES **********************************900px Navigation*/
-    .nav a {
-        font-size: 0.36em;
+    .nav li {
+        font-size: 0.45em;
     }
 
     .logo {
@@ -1317,7 +1333,7 @@ div {
         background-color: #dfd0e0;
         width: 105px;
         height: 60px;
-        top: 380px;
+        top: 490px;
         left: 5px;
     }
 
@@ -1410,21 +1426,21 @@ div {
 @media screen and (max-width: 744px) {
     /* Début_MEDIA QUERIES **********************************744px Navigation*/
 
-    .nav a {
+    .nav li {
         font-size: 0.2em;
         padding: 20px 10px;
-        font-size: 0.30em;
+        font-size: 0.3em;
     }
 
     .logo {
-        width: 40px;
-        height: 40px;
+        width: 50px;
+        height: 50px;
         margin-right: 5px;
         margin-top: 5px;
     }
 
     .nav {
-        height: 50px;
+        height: 60px;
     }
 
     #main_colonne_aacueil {
@@ -1438,6 +1454,99 @@ div {
         border-radius: 5px;
     }
 
+     /* Burger Menu */
+ 
+
+ .box{
+    position: relative;
+}
+.cont-lignes{
+    width: 60px;
+    height: 42px;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.lignes{
+    width: 100%;
+    height: 4px;
+    border-radius: 5px;
+    background-color: #efed3f;
+    position: absolute;
+    transition: all 0.5s ease-in-out;
+}
+.lignes:nth-child(1){
+    top:5px;
+    margin-left: -50px;
+}
+.lignes:nth-child(2){
+    top:15px;
+    margin-left: -50px;
+}
+.lignes:nth-child(3){
+    top:25px;
+    margin-left: -50px;
+}
+.btn1.active .lignes:nth-child(1){
+top:18px;
+transform: rotate(45deg);
+width: 30px;
+}
+.btn1.active .lignes:nth-child(2){
+opacity: 0;
+transform: translateX(-20px);
+}
+.btn1.active .lignes:nth-child(3){
+top:18px;
+transform: rotate(-45deg);
+width: 30px;
+
+}
+nav{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-areas: "div_nav_flex burger";
+}
+
+.list_nav{
+    display: flex;
+    flex-direction: column;
+    margin-left: 10vw;
+    margin-top: 220px;
+}
+
+.bar1 {
+    background-color: #031f12;
+    border-radius: 10px 10px 0 0;
+}
+
+.bar2,
+.bar3 {
+    background-color: #031f12;
+    border-radius: 0 0;
+}
+
+.bar4 {
+    background-color: #031f12;
+    border-radius: 0 0 10px 10px;
+}
+.div_nav_flex{
+    grid-area: div_nav_flex;
+}
+.box{
+    grid-area: burger;
+}
+.smallScreen {
+    display:none;
+  }
+.smallScreen a:hover{
+    background-color: #031f12;
+}
+a{
+font-size: 1.3em;
+}
     /* Début_MEDIA QUERIES **********************************744px Navigation*/
     /* Début_MEDIA QUERIES **********************************744px Acceuil*/
 
@@ -1567,7 +1676,7 @@ div {
         background-color: #dfd0e0;
         width: 105px;
         height: 60px;
-        top: 380px;
+        top: 490px;
         left: 5px;
     }
 
@@ -1652,7 +1761,7 @@ div {
 @media screen and (max-width: 390px) {
     /* Début_MEDIA QUERIES **********************************390px Navigation*/
 
-    .nav a {
+    .nav li {
         font-size: 0.2em;
         padding: 20px 9px;
         font-size: 0.30em;
@@ -1661,7 +1770,8 @@ div {
     .logo {
         width: 40px;
         height: 40px;
-        margin-right: 5px;
+        margin-right: 0px;
+        margin-left: -10px;
         margin-top: 5px;
     }
 
@@ -1669,6 +1779,94 @@ div {
         height: 50px;
     }
 
+     
+    /* .burger_menu::before {
+        content: "";
+        background-color: red;
+        width: 30px;
+        height: 5px;
+        border-radius: 25px;
+        position: absolute;
+        top: -10px;
+      }
+    
+      .burger_menu {
+        display: inline-block;
+        order: 3;
+        background-color: red;
+        width: 30px;
+        height: 5px;
+        border-radius: 25px;
+        position: relative;
+      }
+    
+      .burger_menu::after {
+        content: "";
+        background-color: red;
+        width: 30px;
+        height: 5px;
+        border-radius: 25px;
+        position: absolute;
+        bottom: -10px;
+      }
+
+      #hidden:hover {
+        cursor: pointer;
+      }
+    
+      #hidden:checked~#pages {
+        width: 90px;
+        height: 90px;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        font-size: 0.8em;
+        background-color: green;
+        color: var(--white);
+        visibility: visible;
+        flex-direction: column;
+        justify-content: space-evenly;
+        gap: 0;
+        text-align: center;
+        position: absolute;
+        right: 0px;
+        top: 68px;
+        z-index: 1;
+      }
+    
+      #hidden:checked~.invert_border_right {
+        visibility: visible;
+        height: 30px;
+        width: 30px;
+        right: -30px;
+        top: 69.5px;
+        border-top-left-radius: 10px;
+        box-shadow: -5px -5px green;
+        opacity: 1;
+        z-index: 2;
+      }
+    
+      #hidden:checked~.invert_border_left {
+        visibility: visible;
+        height: 30px;
+        width: 30px;
+        right: 90px;
+        top: 69.5px;
+        border-top-right-radius: 10px;
+        box-shadow: 5px -5px green;
+        opacity: 1;
+        z-index: 2;
+      }
+    
+      #pages+li {
+        position: relative;
+      }  */
+
+
+      /* nav {
+        margin-top: 200px;
+      } */
+
+ 
     /* Début_MEDIA QUERIES **********************************390px Navigation*/
     /* Début_MEDIA QUERIES **********************************390px Acceuil*/
     #titre_dev {
@@ -1698,7 +1896,12 @@ div {
         margin-top: 40px;
         margin-left: 0px;
     }
-
+    #main_colonne_aacueil img {
+        width: 150px;
+        border-radius: 5px;
+        box-shadow: 0px 0px 5px yellow;
+    
+    }
     /* Fin_MEDIA QUERIES **********************************390px Acceuil*/
 
     /* Début_MEDIA QUERIES **********************************390px Réalisations*/
@@ -1742,7 +1945,7 @@ div {
         margin-bottom: 15px;
         width: 65vw;
         font-size: 0.67em;
-        margin-left: 4vw;
+        margin-left: 2.5vw;
     }
 
     .article_veille p:nth-of-type(1) {
@@ -1801,7 +2004,7 @@ div {
         background-color: #dfd0e0;
         width: 105px;
         height: 60px;
-        top: 380px;
+        top: 490px;
         left: 5px;
     }
 
@@ -1810,6 +2013,8 @@ div {
     /* Début_MEDIA QUERIES **********************************390px CV*/
 
     #main_colonne_cv {
+        margin-left: 2.5px;
+        margin-right: 2.5px;
         max-width: 95vw;
     }
 
@@ -1818,13 +2023,14 @@ div {
     }
 
     #cv_texte {
-        margin-left: 5vw;
+        margin-left: 2.5px;
+        margin-right: 2.5px;
         width: 95vw;
     }
 
     #cv_texte section {
-        margin-left: 0px;
-        margin-right: 0px;
+        margin-left: 2.5px;
+        margin-right: 2.5px;
         width: 95vw;
     }
 
@@ -1844,17 +2050,16 @@ div {
 
     .cv_date p,
     .cv_date strong,
-    .cv_competence p,
-    .atouts_box p,
-    .atouts_box span,
-    .atouts_box h4,
-    .loisirs-box p {
-        font-size: 0.55em;
+    .cv_competence p{
+        font-size: 0.85em;
+    }
+ 
+    .cv_date h3 {
+        font-size: 0.9em;
     }
 
-    .cv_date h3,
     .cv_competence h4 {
-        font-size: 0.65em;
+        font-size: 1em;
     }
 
     section>h2 {
@@ -1868,11 +2073,32 @@ div {
         gap: 5px;
     }
 
+
     .cv_competence span {
-        font-size: 0.6em;
+        margin-top: 15px;
+        margin-bottom: 0px;
+        font-size: 0.9em;
 
     }
 
+    .atouts_box {
+        margin-left: 50px;
+    }
+
+    .atouts_box span {
+        font-size: 0.5em;
+    }
+    .atouts_box p {
+        font-size: 0.6em;
+    }
+
+    .atouts_box h4 {
+        font-size: 0.7em;
+    }
+
+    .loisirs-box p {
+        font-size: 0.9em;
+    }
 }
 
 /* Fin_MEDIA QUERIES **********************************390px CV*/
